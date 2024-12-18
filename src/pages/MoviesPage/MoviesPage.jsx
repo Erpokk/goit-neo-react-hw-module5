@@ -2,11 +2,11 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 
-import css from "../MoviesPage/MoviesPage.module.css";
+import css from "./MoviesPage.module.css";
 
-import MovieList from "../../src/components/MovieList/MovieList";
-import Pagination from "../../src/components/Pagination/Pagination";
-import getApiOptions from "../../src/utils/apiConfig.js";
+import MovieList from "../../components/MovieList/MovieList.jsx";
+import Pagination from "../../components/Pagination/Pagination.jsx";
+import getApiOptions from "../../utils/apiConfig.js";
 
 const MoviesPage = () => {
   const [movies, setMovies] = useState([]);

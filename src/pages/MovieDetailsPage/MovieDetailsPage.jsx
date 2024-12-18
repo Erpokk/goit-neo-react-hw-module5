@@ -1,12 +1,12 @@
 import axios from "axios";
 import { Suspense, useEffect, useRef, useState } from "react";
 import { Link, Outlet, useLocation, useParams } from "react-router-dom";
-import getApiOptions from "../../src/utils/apiConfig.js";
+import getApiOptions from "../../utils/apiConfig.js";
 
 import css from "./MovieDetailsPage.module.css";
 
-import placeHolderImg from "../../src/assets/images/placeHolderImg.jpg";
-import { BackLink } from "../../src/components/BackLink/BackLink";
+import placeHolderImg from "../../assets/images/placeHolderImg.jpg";
+import { BackLink } from "../../components/BackLink/BackLink.jsx";
 
 const MovieDetailsPage = () => {
   const { movieId } = useParams();
